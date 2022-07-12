@@ -1,0 +1,20 @@
+.btn-notificacao {
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #FF6B72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn-notificacao:hover {
+    background: rgba(197, 53, 60, 0.1);
+    border: 1px solid #c03138;
+}
+
+.btn-notificacao img {
+    width: 19px;
+}
