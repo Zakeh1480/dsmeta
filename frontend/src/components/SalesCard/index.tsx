@@ -1,5 +1,7 @@
 import { NotificationButton } from '../NotificationButton';
 import './styles.css';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export const SalesCard = () => {
     return (
@@ -8,11 +10,21 @@ export const SalesCard = () => {
             <div>
                 <div>
                     <div className="dsmeta-form-container">
-                        <input className="dsmeta-form-input" type="date" />
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="dsmeta-form-input"
+                            dateFormat="dd/MM/yyyy"
+                        />
                     </div>
 
                     <div className="dsmeta-form-container">
-                        <input className="dsmeta-form-input" type="date" />
+                        <DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="dsmeta-form-input"
+                            dateFormat="dd/MM/yyyy"
+                        />
                     </div>
                 </div>
             </div>
@@ -40,9 +52,9 @@ export const SalesCard = () => {
                         <td>R$ 55300.00</td>
                         <td>
                             <div className="btn-notificacao-container">
-                            <div className="btn-notificacao-container">
-                                <NotificationButton />
-                            </div>
+                                <div className="btn-notificacao-container">
+                                    <NotificationButton />
+                                </div>
                             </div>
                         </td>
                     </tr>
@@ -55,9 +67,9 @@ export const SalesCard = () => {
                         <td>R$ 41000.00</td>
                         <td>
                             <div className="btn-notificacao-container">
-                            <div className="btn-notificacao-container">
-                                <NotificationButton />
-                            </div>
+                                <div className="btn-notificacao-container">
+                                    <NotificationButton />
+                                </div>
                             </div>
                         </td>
                     </tr>
