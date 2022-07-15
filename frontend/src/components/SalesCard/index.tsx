@@ -76,7 +76,7 @@ export const SalesCard = () => {
                 <td>R$ {sales.amount.toFixed(2)}</td>
                 <td>
                   <div className="btn-notificacao-container">
-                    <NotificationButton />
+                    <NotificationButton saleId={sales.id} />
                   </div>
                 </td>
               </tr>
